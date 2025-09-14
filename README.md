@@ -6,18 +6,9 @@
   <a href="https://nobody277.github.io/Syncretic/" target="_blank" style="text-decoration:none; color:inherit;">
     Syncretic
   </a>
+  <p align="center">
+    <img src="https://img.shields.io/github/last-commit/Nobody277/Syncretic?style=flat&logo=git&logoColor=white&color=0080ff" alt="Last Commit">
+    <img src="https://img.shields.io/github/languages/top/Nobody277/Syncretic?style=flat&color=0080ff" alt="Top Language">
+    <img src="https://img.shields.io/github/languages/count/Nobody277/Syncretic?style=flat&color=0080ff" alt="Languages Count">
+  </p>
 </h1>
-
-<p align="center">
-  <img src="https://img.shields.io/github/last-commit/Nobody277/Syncretic?style=flat&logo=git&logoColor=white&color=0080ff" alt="Last Commit">
-  <img src="https://img.shields.io/github/languages/top/Nobody277/Syncretic?style=flat&color=0080ff" alt="Top Language">
-  <img src="https://img.shields.io/github/languages/count/Nobody277/Syncretic?style=flat&color=0080ff" alt="Languages Count">
-</p>
-
-## Tools
-
-- **Class Diagram Generator**  
-  Generate UML class diagrams from java code.
-
-- **Complexity Analysis**  
-  Analyze code to get the time and space complexity of Java function.
