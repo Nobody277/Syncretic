@@ -8,9 +8,11 @@
   </a>
 </h1>
 
-![Last Commit](https://img.shields.io/github/last-commit/Nobody277/Syncretic?style=flat&logo=git&logoColor=white&color=0080ff)
-![Top Language](https://img.shields.io/github/languages/top/Nobody277/Syncretic?style=flat&color=0080ff)
-![Languages Count](https://img.shields.io/github/languages/count/Nobody277/Syncretic?style=flat&color=0080ff)
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/Nobody277/Syncretic?style=flat&logo=git&logoColor=white&color=0080ff" alt="Last Commit">
+  <img src="https://img.shields.io/github/languages/top/Nobody277/Syncretic?style=flat&color=0080ff" alt="Top Language">
+  <img src="https://img.shields.io/github/languages/count/Nobody277/Syncretic?style=flat&color=0080ff" alt="Languages Count">
+</p>
 
 ## Tools
 
