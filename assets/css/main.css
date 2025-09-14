@@ -1,0 +1,250 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #e1e5e9;
+    background-color: #0d1117;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d1117;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 6px;
+    border: 2px solid #0d1117;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+}
+
+::-webkit-scrollbar-corner {
+    background: #0d1117;
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #30363d #0d1117;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+.main-header {
+    background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+    color: #f0f6fc;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+    color: #58a6ff;
+}
+
+.tagline {
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 300;
+    color: #8b949e;
+}
+
+/* Main content */
+.main-content {
+    padding: 2rem 0;
+}
+
+/* Tools grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tool-card {
+    background: #161b22;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #30363d;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-2px);
+    border-color: #58a6ff;
+    background: #21262d;
+}
+
+.tool-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tool-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #f0f6fc;
+    font-weight: 400;
+}
+
+.tool-card p {
+    color: #8b949e;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.tool-card .tool-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #6e7681;
+}
+
+/* Button styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+    color: white;
+    border: 1px solid #1f6feb;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(31, 111, 235, 0.3);
+}
+
+.btn-secondary {
+    background: #21262d;
+    color: #f0f6fc;
+    border: 1px solid #30363d;
+}
+
+.btn-secondary:hover {
+    background: #30363d;
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Footer */
+.main-footer {
+    background: #0d1117;
+    color: #8b949e;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #30363d;
+}
+
+.main-footer p {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    .main-content {
+        padding: 1.5rem 0;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tool-card {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .main-header {
+        padding: 1.5rem 0;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    .tool-card {
+        padding: 1rem;
+    }
+}
